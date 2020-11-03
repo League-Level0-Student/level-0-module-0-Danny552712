@@ -28,16 +28,15 @@ int count = 0;
 
         // DRAW.  Draw a line. Use this command:
     		  /**     rob.move();    **/
-  bob.move(100);
+
 
 	// TURN.  Turn 90 degrees. Use this command:
     		  /**     rob.turn();    **/
-bob.turn(90);
+
     	
     	// INCREASE COUNT. Add one to the number of sides that have now been drawn like this:
     		  /**     count += 1;    **/
 
-    	
     	// Run the program. Did the Robot draw a line and turn?
     	 
     	
@@ -54,7 +53,9 @@ bob.turn(90);
     	
     	
     	// Run the program again. Did your Robot draw a square?
-
-
-    }
+while ( count < 4 ) {
+	bob.move(100);
+	bob.turn(90);
+	count += 1;
 }
+    }}	
