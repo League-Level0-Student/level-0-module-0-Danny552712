@@ -17,9 +17,14 @@ public class QuizGame {
 		score += 1;}
 		// MAKE MORE QUESTIONS. Ask more questions by repeating the above 
 				// Option: Subtract a point from their score for a wrong answer
-				else {score -= 1;}
-		String answer2=JOptionPane.showInputDialog("What is the )
+				else {score -= 0;}
+		String answer2=JOptionPane.showInputDialog("What is 10+9?");
+		 if (answer2.equals("19")) {score += 1;}
+		 else {score -= 0;}
+		 String answer3=JOptionPane.showInputDialog("Do you eat food?");
+		 if (answer3.equals("yes")) {score +=1;}
+		 else {score -=3;}
 		// After all the questions have been asked, tell the user their final score 
-		
+		JOptionPane.showMessageDialog(null, score+"/3");
 	}
 	}
