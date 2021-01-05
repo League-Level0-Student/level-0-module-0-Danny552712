@@ -14,25 +14,25 @@ public static void main(String[] args) {
 		// 2. Make a variable that will hold a random whole number
 	Random ran = new Random();
 		// 3. Set your variable equal to a positive number less than 4 using     ran.nextInt(4); 
-	int Random = ran.nextInt(4);
+	int Number = ran.nextInt(4);
 		// 3. Print your variable to the console
- 
+System.out.println(Number);
 		// 4. Get the user to enter something that they think is awesome
 	String cool = JOptionPane.showInputDialog("What is awesome?");
 		// 5. If your variable is  0
-	if(ran.equals(0)) {JOptionPane.showMessageDialog(null, "Thats awesome!");}
+	if(Number==(0)) {JOptionPane.showMessageDialog(null, "Thats awesome!");}
 			// -- tell the user whatever they entered is awesome!
 	
 		// 6. If your variable is  1
-	if (ran.equals(1)) {JOptionPane.showMessageDialog(null, "Ok.");}
+	if (Number==(1)) {JOptionPane.showMessageDialog(null, "Ok.");}
 			// -- tell the user whatever they entered is ok.
 	
 		// 7. If your variable is  2
-	if (ran.equals(2)) {JOptionPane.showMessageDialog(null, "Thats boring.");}
+	if (Number==(2)) {JOptionPane.showMessageDialog(null, "Thats boring.");}
 			// -- tell the user whatever they entered is boring.
 	
 		// 8. If your variable is  3
-	if(ran.equals(3)) {JOptionPane.showMessageDialog(null, "That's cool but I'm not interested");}
+	if(Number==(3)) {JOptionPane.showMessageDialog(null, "That's cool but I'm not interested");}
 			// -- invent your own message to give to the user (be nice).
 
 }}
