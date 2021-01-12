@@ -74,7 +74,7 @@ public class ScaryMaze extends JPanel implements Runnable, MouseMotionListener {
 		
 		//7. Make a new int variable for the background color of the maze
 
-		int backgroundcolor=-1677216;
+		int backgroundcolor=-16777216;
 		//8. Run the program and move the mouse over the BACKGROUND COLOR. 
 		//   Use the number that is printed to the console to set the background color variable 
 
