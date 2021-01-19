@@ -36,17 +36,17 @@ int dragonattack=0;
 				// 3. Ask the player in a pop-up if they want to attack the dragon with a yell
 				// or a kick
 	Object[] array= {"Yell","Kick"};
-			int userinput=JOptionPane.showOptionDialog(null, "Choose", "Attack", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, array, "Yell");
+			int userinput=JOptionPane.showOptionDialog(null, "Choose Your Attack", "Attack", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, array, "Yell");
 				// 4. If they typed in "yell":
 	if(userinput==0) {
-		int number=ran.nextInt(10);
+		playerattack=ran.nextInt(10);
 	}
 					  // -- Find a random number between 0 and 10 and store it in playerAttack. Use
 					  // ran.nextInt(10)
 			
 				// 5. If they typed in "kick":
 	if(userinput==1) {
-		int randomnumber=ran.nextInt(25);
+		playerattack=ran.nextInt(25);
 	}
 					  // -- Find a random number between 0 and 25 and store it in playerAttack.
 		
@@ -55,20 +55,20 @@ dragonhealth=dragonhealth-playerattack;
 			// THE DRAGON RETALIATES
 
 				// 7. Find a random number between 0 and 35 and store it in dragonAttack
-	int dragonnumber=ran.nextInt(35);
+	dragonattack=ran.nextInt(35);
 				// 8. Subtract the dragon attack value from the player's health
 playerhealth=playerhealth-dragonattack;
 			// ASSESS THE DAMAGE
 
 				// 9. If the player's health is less than or equal to 0, the game is over,
 				//    call the playerLost() method
-	if (playerhealth==0) {
+	if (playerhealth<=0) {
 		playerLost();
 	}
 			
 				// 10. If the dragon's health is less than or equal to 0, the game is over,
 				//     call the dragonLost() method
-if(dragonhealth==0) {
+if(dragonhealth<=0) {
 	dragonLost();
 }
 			
