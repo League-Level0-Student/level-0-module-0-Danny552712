@@ -19,12 +19,12 @@ void setup() {
 cat = loadImage("cat.jpg");
   
 // 3. Set the size of the sketch. Make it big enough to show the cat you chose.
-
+size(852,480);
 // 4. Resize the cat so it is the same size as the sketch
-
+cat.resize(852,480);
 // 5. DRAW CAT.    Use the background() command to make the cat the background of the sketch
 //    Run the program to see if the cat is drawn. Get this working before you go on.
- 
+ background(cat);
 
   }
 
