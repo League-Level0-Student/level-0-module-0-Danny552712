@@ -9,8 +9,8 @@
 // This line of code creates a variable to hold your faccate picture
 // You will use it later.
 PImage cat;
-int x=0;
-int y=0;
+int x=470;
+int y=214;
 
 void setup() {
   
@@ -43,15 +43,22 @@ void draw() {
 
 // 8. DRAW CIRCLES.
 //     The circles will have black lines around them by default. Put noStroke(); here to remove them.
+noStroke();
+
 
 // 9.  COLOR.  Set the color of your ellipse to the laser color you would like
 //    Remember to use the   fill()  command to set colors.
-
+fill(#FF0000);
 
 // 10 Use the ellipse() command to draw a circle on the eye (you will have to guess its size). 
 //    Use the x and y variables you just created to place the ellipse in the correct location.
 //                  The ellipse command looks like this:
-                ellipse(x, y, width, height);
+                ellipse(x,y,90,90);
+                ellipse(x-184,y-3,90,90);
+               if(x>width){
+               x=470;
+             y=214;
+           background(cat);}
 // Run the program to make sure it is in the right place and is the right size.
 }
 
@@ -59,8 +66,8 @@ void draw() {
 //      the space bar. Run the program to test it.
 //      If you want it to move to the left, change to x-1=.
 void keyPressed() {
-    x+=1;
-    y+=1;
+    x+=-50;
+    y+=50;
     
 // 12.  If you want them to go faster, add more than one each time the key is pressed    
 }
