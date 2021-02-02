@@ -38,7 +38,8 @@ void setup() {
   space.resize(width, height); 
 }
 
-
+int catX=0;
+int dogX=0;
 void draw() {
 // 3. DRAW BACKGROUND    
 //    Use the background() command to draw where the race is taking place.
@@ -94,7 +95,7 @@ void moveRacer2(){
   racer2X = racer2X + 5;
 }
 
-void checkForWinner(){
+void checkForWinner(int catX, int dogX){
   if (catX>width-60){
     text("CATS ARE THE BEST", 400, 50); 
     if (canPlaySounds) {
